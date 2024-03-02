@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc01f1ac.css",
-    "main.js": "/static/js/main.63e28d1f.js",
-    "static/js/453.d468ffc3.chunk.js": "/static/js/453.d468ffc3.chunk.js",
-    "index.html": "/index.html",
-    "main.cc01f1ac.css.map": "/static/css/main.cc01f1ac.css.map",
-    "main.63e28d1f.js.map": "/static/js/main.63e28d1f.js.map",
-    "453.d468ffc3.chunk.js.map": "/static/js/453.d468ffc3.chunk.js.map"
+    "main.css": "/DindicusWebsite/static/css/main.cc01f1ac.css",
+    "main.js": "/DindicusWebsite/static/js/main.e386cb05.js",
+    "static/js/453.d468ffc3.chunk.js": "/DindicusWebsite/static/js/453.d468ffc3.chunk.js",
+    "index.html": "/DindicusWebsite/index.html",
+    "main.cc01f1ac.css.map": "/DindicusWebsite/static/css/main.cc01f1ac.css.map",
+    "main.e386cb05.js.map": "/DindicusWebsite/static/js/main.e386cb05.js.map",
+    "453.d468ffc3.chunk.js.map": "/DindicusWebsite/static/js/453.d468ffc3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc01f1ac.css",
-    "static/js/main.63e28d1f.js"
+    "static/js/main.e386cb05.js"
   ]
 }
