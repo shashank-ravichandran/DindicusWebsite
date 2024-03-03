@@ -1,11 +1,34 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import * as mol from "3dmol";
+import axios from "axios";
 
 export const ListCard = (props) => {
   let [toggleWindow, setToggleWindow] = useState();
+  let [structData, setStructData] = useState();
+  let viewer = null;
+  const viewerRef = useRef(null);
 
-  useEffect(()=> {
+  useEffect(() => {
     setToggleWindow(false);
   }, []);
+
+  const renderStructure = () => {
+    const viewerElement = document.querySelector(".mol-viewer");
+    viewer = mol.createViewer(viewerElement);
+    viewer.setBackgroundColor(0xffffff);
+    viewer.addModel(structData, "pdb");
+    viewer.setStyle({}, { cartoon: {} });
+
+    viewer.zoomTo();
+    viewer.render();
+  };
+
+  const loadStructure = () => {
+    axios.get(`https://files.rcsb.org/download/1JUG.pdb`).then((response) => {
+      console.log(response.data);
+      setStructData(response.data);
+    });
+  };
 
   return (
     <div className="col-12">
