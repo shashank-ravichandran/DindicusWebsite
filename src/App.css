@@ -51,10 +51,17 @@ a {
   justify-content: space-evenly;
 }
 
-.window {
+.accordian {
   height: 500px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 7px 7px;
+}
+
+.window {
+  width: 40%;
+  height: 95%;
+  margin: auto 20px;
+  border: 2px solid black;
 }
 
 .list-card {
